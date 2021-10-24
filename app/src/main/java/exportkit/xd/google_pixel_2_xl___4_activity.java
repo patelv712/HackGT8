@@ -21,6 +21,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import android.widget.Button;
+
 
 import android.view.View;
 import android.widget.ImageView;
@@ -57,6 +59,10 @@ public class google_pixel_2_xl___4_activity extends Activity {
 	private ImageView vector_ek32;
 	private ImageView vector_ek33;
 
+	private Button buttonProf;
+	private Button buttonHome;
+	private Button buttonDash;
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 
@@ -69,11 +75,8 @@ public class google_pixel_2_xl___4_activity extends Activity {
 		rectangle_10 = (View) findViewById(R.id.rectangle_10);
 		rectangle_3_ek3 = (View) findViewById(R.id.rectangle_3_ek3);
 		vector_ek22 = (ImageView) findViewById(R.id.vector_ek22);
-		vector_ek23 = (ImageView) findViewById(R.id.vector_ek23);
-		vector_ek24 = (ImageView) findViewById(R.id.vector_ek24);
 		vector_ek25 = (ImageView) findViewById(R.id.vector_ek25);
 		vector_ek26 = (ImageView) findViewById(R.id.vector_ek26);
-		vector_ek27 = (ImageView) findViewById(R.id.vector_ek27);
 		sunday__10_23_ek2 = (TextView) findViewById(R.id.sunday__10_23_ek2);
 		vector_ek28 = (ImageView) findViewById(R.id.vector_ek28);
 		vector_ek29 = (ImageView) findViewById(R.id.vector_ek29);
@@ -92,6 +95,45 @@ public class google_pixel_2_xl___4_activity extends Activity {
 		vector_ek32 = (ImageView) findViewById(R.id.vector_ek32);
 		vector_ek33 = (ImageView) findViewById(R.id.vector_ek33);
 	
+		buttonDash = (Button) findViewById(R.id.bDashboard);
+		buttonProf = (Button) findViewById(R.id.bProf);
+		buttonHome = (Button) findViewById(R.id.bHome);
+
+		buttonDash.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				openDashboard();
+			}
+		});
+
+		buttonProf.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				openProfile();
+			}
+		});
+
+		buttonHome.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				openHome();
+			}
+		});
+	}
+	private void openDashboard() {
+		Intent intent = new Intent(this, google_pixel_2_xl___3_activity.class);
+		startActivity(intent);
+	}
+	private void openProfile() {
+		finish();
+		overridePendingTransition(0, 0);
+		startActivity(getIntent());
+		overridePendingTransition(0, 0);
+
+	}
+	private void openHome() {
+		Intent intent = new Intent(this, google_pixel_2_xl___2_activity.class);
+		startActivity(intent);
 
 	}
 }

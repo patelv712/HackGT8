@@ -38,7 +38,7 @@ public class google_pixel_2_xl___2_activity extends Activity {
 	private ImageView vector_ek6;
 	//private ImageView vector_ek7;
 	private ImageView vector_ek8;
-	private ImageView vector_ek9;
+
 	private TextView sunday__10_23;
 	private View rectangle_4;
 	private View rectangle_5;
@@ -57,6 +57,8 @@ public class google_pixel_2_xl___2_activity extends Activity {
 	private ImageView vector_ek13;
 
 	private Button buttonDash;
+	private Button buttonProf;
+	private Button buttonHome;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -68,12 +70,12 @@ public class google_pixel_2_xl___2_activity extends Activity {
 		_bg__google_pixel_2_xl___2_ek2 = (View) findViewById(R.id._bg__google_pixel_2_xl___2_ek2);
 		rectangle_2_ek1 = (View) findViewById(R.id.rectangle_2_ek1);
 		rectangle_3_ek1 = (View) findViewById(R.id.rectangle_3_ek1);
-		vector_ek4 = (ImageView) findViewById(R.id.vector_ek4);
+
 		vector_ek5 = (ImageView) findViewById(R.id.vector_ek5);
 		vector_ek6 = (ImageView) findViewById(R.id.vector_ek6);
 		//vector_ek7 = (ImageView) findViewById(R.id.vector_ek7);
 		vector_ek8 = (ImageView) findViewById(R.id.vector_ek8);
-		vector_ek9 = (ImageView) findViewById(R.id.vector_ek9);
+
 		sunday__10_23 = (TextView) findViewById(R.id.sunday__10_23);
 		rectangle_4 = (View) findViewById(R.id.rectangle_4);
 		rectangle_5 = (View) findViewById(R.id.rectangle_5);
@@ -92,6 +94,8 @@ public class google_pixel_2_xl___2_activity extends Activity {
 		vector_ek13 = (ImageView) findViewById(R.id.vector_ek13);
 
 		buttonDash = (Button) findViewById(R.id.bDashboard);
+		buttonProf = (Button) findViewById(R.id.bProf);
+		buttonHome = (Button) findViewById(R.id.bHome);
 
 		buttonDash.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -99,10 +103,35 @@ public class google_pixel_2_xl___2_activity extends Activity {
 				openDashboard();
 			}
 		});
-		}
+
+		buttonProf.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				openProfile();
+			}
+		});
+
+		buttonHome.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				openHome();
+			}
+		});
+	}
 	private void openDashboard() {
 		Intent intent = new Intent(this, google_pixel_2_xl___3_activity.class);
 		startActivity(intent);
+	}
+	private void openProfile() {
+		Intent intent = new Intent(this, google_pixel_2_xl___4_activity.class);
+		startActivity(intent);
+	}
+	private void openHome() {
+		//Intent intent = new Intent(this, google_pixel_2_xl___2_activity.class);
+		finish();
+		overridePendingTransition(0, 0);
+		startActivity(getIntent());
+		overridePendingTransition(0, 0);
 	}
 }
 	

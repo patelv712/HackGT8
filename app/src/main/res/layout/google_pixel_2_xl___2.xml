@@ -32,12 +32,13 @@
 				android:layout_height="wrap_content"
 				>
 
-				<View android:id="@+id/_bg__google_pixel_2_xl___2_ek2"
-					android:background="@drawable/_bg__google_pixel_2_xl___2_ek2_shape"
-					 android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
+				<View
+					android:id="@+id/_bg__google_pixel_2_xl___2_ek2"
 					android:layout_width="411dp"
-					android:layout_height="823dp" />
+					android:layout_height="823dp"
+					android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp"
+					android:background="@drawable/_bg__google_pixel_2_xl___2_ek2_shape" />
 
 				<View android:id="@+id/rectangle_2_ek1"
 					android:background="@drawable/rectangle_2_ek1_shape"
@@ -61,13 +62,14 @@
 					android:layout_height="wrap_content"
 					>
 
-					<ImageView android:id="@+id/vector_ek4"
-						android:src="@drawable/vector_ek4"
-						android:contentDescription="vector_ek4"
-						 android:layout_marginStart="0dp"
-						android:layout_marginTop="0dp"
+					<Button
+						android:id="@+id/bHome"
 						android:layout_width="58dp"
-						android:layout_height="58dp" />
+						android:layout_height="58dp"
+						android:layout_marginStart="0dp"
+						android:layout_marginTop="0dp"
+						android:contentDescription="bHome"
+						android:background="@drawable/vector_ek4" />
 
 					<ImageView
 						android:id="@+id/vector_ek5"
@@ -103,7 +105,7 @@
 						android:layout_marginStart="4.25dp"
 						android:layout_marginTop="2.13dp"
 						android:contentDescription="bDashboard"
-						android:src="@drawable/vector_ek7" />
+						android:background="@drawable/vector_ek7" />
 
 
 				</RelativeLayout>
@@ -124,13 +126,14 @@
 						android:layout_width="58dp"
 						android:layout_height="58dp" />
 
-					<ImageView android:id="@+id/vector_ek9"
-						android:src="@drawable/vector_ek9"
-						android:contentDescription="vector_ek9"
-						 android:layout_marginStart="9.67dp"
-						android:layout_marginTop="9.67dp"
+					<Button
+						android:id="@+id/bProf"
 						android:layout_width="38.67dp"
-						android:layout_height="38.67dp" />
+						android:layout_height="38.67dp"
+						android:layout_marginStart="9.67dp"
+						android:layout_marginTop="9.67dp"
+						android:contentDescription="vector_ek9"
+						android:background="@drawable/vector_ek9" />
 
 				</RelativeLayout>
 

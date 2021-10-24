@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- hackgt_8___wtm strings -->
+
+	<string name="app_name">Page 1</string>
+	<string name="ek_img_content">ExportKit Image</string>
+	<string name="wtm_string">WTM</string>
+	<string name="what_s_the_move__string">Whats the move?</string>
+	<string name="sunday__10_23_string">Sunday, 10/23</string>
+	<string name="eotd___gt_hackathon_string">EOTD - GT Hackathon</string>
+	<string name="all_day_string">ALL DAY</string>
+	<string name="_9_00_am_string">9:00 AM</string>
+	<string name="_10_00_am_string">10:00 AM</string>
+	<string name="_11_00_am_string">11:00 AM</string>
+	<string name="klaus_building_string">Klaus Building</string>
+	<string name="sunday__10_23_ek1_string">Sunday, 10/23</string>
+	<string name="my_events_string">My Events</string>
+	<string name="_9_00_am_ek1_string">9:00 AM</string>
+	<string name="_10_00_am_ek1_string">10:00 AM</string>
+	<string name="_11_00_am_ek1_string">11:00 AM</string>
+	<string name="sunday__10_23_ek2_string">Sunday, 10/23</string>
+	<string name="log_in_string">Log in</string>
+	<string name="my_friends_string">My Friends</string>
+	<string name="search_string">Search</string>
+</resources>

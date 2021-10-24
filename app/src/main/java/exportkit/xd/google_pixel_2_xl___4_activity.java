@@ -18,6 +18,7 @@
 package exportkit.xd;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 
@@ -91,9 +92,7 @@ public class google_pixel_2_xl___4_activity extends Activity {
 		vector_ek32 = (ImageView) findViewById(R.id.vector_ek32);
 		vector_ek33 = (ImageView) findViewById(R.id.vector_ek33);
 	
-		
-		//custom code goes here
-	
+
 	}
 }
 	

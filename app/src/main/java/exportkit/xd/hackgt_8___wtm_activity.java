@@ -50,7 +50,7 @@ public class hackgt_8___wtm_activity extends AppCompatActivity {
 				startActivity(intent);
 				finish(); //if back button finish the program
 			}
-		}, 3000);
+		}, 2000);
 	}
 		//custom code goes here
 	

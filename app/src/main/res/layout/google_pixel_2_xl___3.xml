@@ -32,12 +32,13 @@
 				android:layout_height="wrap_content"
 				>
 
-				<View android:id="@+id/_bg__google_pixel_2_xl___3_ek2"
-					android:background="@drawable/_bg__google_pixel_2_xl___3_ek2_shape"
-					 android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
+				<View
+					android:id="@+id/_bg__google_pixel_2_xl___3_ek2"
 					android:layout_width="411dp"
-					android:layout_height="823dp" />
+					android:layout_height="823dp"
+					android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp"
+					android:background="@drawable/_bg__google_pixel_2_xl___3_ek2_shape" />
 
 				<View android:id="@+id/rectangle_2_ek2"
 					android:background="@drawable/rectangle_2_ek2_shape"
@@ -69,13 +70,14 @@
 						android:layout_width="58dp"
 						android:layout_height="58dp" />
 
-					<ImageView android:id="@+id/vector_ek15"
-						android:src="@drawable/vector_ek15"
-						android:contentDescription="vector_ek15"
-						 android:layout_marginStart="9.67dp"
-						android:layout_marginTop="7.25dp"
+					<Button
+						android:id="@+id/bHome"
 						android:layout_width="38.67dp"
-						android:layout_height="43.5dp" />
+						android:layout_height="43.5dp"
+						android:layout_marginStart="9.67dp"
+						android:layout_marginTop="7.25dp"
+						android:contentDescription="vector_ek15"
+						android:background="@drawable/vector_ek15" />
 
 				</RelativeLayout>
 
@@ -95,13 +97,14 @@
 						android:layout_width="51dp"
 						android:layout_height="51dp" />
 
-					<ImageView android:id="@+id/vector_ek17"
-						android:src="@drawable/vector_ek17"
-						android:contentDescription="vector_ek17"
-						 android:layout_marginStart="4.25dp"
-						android:layout_marginTop="2.13dp"
+					<Button
+						android:id="@+id/bDashboard"
 						android:layout_width="42.5dp"
-						android:layout_height="46.75dp" />
+						android:layout_height="46.75dp"
+						android:layout_marginStart="4.25dp"
+						android:layout_marginTop="2.13dp"
+						android:contentDescription="vector_ek17"
+						android:background="@drawable/vector_ek17" />
 
 				</RelativeLayout>
 
@@ -121,13 +124,14 @@
 						android:layout_width="58dp"
 						android:layout_height="58dp" />
 
-					<ImageView android:id="@+id/vector_ek19"
-						android:src="@drawable/vector_ek19"
-						android:contentDescription="vector_ek19"
-						 android:layout_marginStart="9.67dp"
-						android:layout_marginTop="9.67dp"
+					<Button
+						android:id="@+id/bProf"
 						android:layout_width="38.67dp"
-						android:layout_height="38.67dp" />
+						android:layout_height="38.67dp"
+						android:layout_marginStart="9.67dp"
+						android:layout_marginTop="9.67dp"
+						android:contentDescription="vector_ek19"
+						android:background="@drawable/vector_ek19" />
 
 				</RelativeLayout>
 
@@ -157,12 +161,13 @@
 					android:layout_width="302dp"
 					android:layout_height="80dp" />
 
-				<View android:id="@+id/rectangle_6_ek1"
-					android:background="@drawable/rectangle_6_ek1_shape"
-					 android:layout_marginStart="62dp"
-					android:layout_marginTop="352dp"
+				<View
+					android:id="@+id/rectangle_6_ek1"
 					android:layout_width="302dp"
-					android:layout_height="80dp" />
+					android:layout_height="80dp"
+					android:layout_marginStart="62dp"
+					android:layout_marginTop="352dp"
+					android:background="@drawable/rectangle_6_ek1_shape" />
 
 				<View android:id="@+id/rectangle_7_ek1"
 					android:background="@drawable/rectangle_7_ek1_shape"

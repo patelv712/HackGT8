@@ -104,8 +104,8 @@
 						android:layout_height="46.75dp"
 						android:layout_marginStart="4.25dp"
 						android:layout_marginTop="2.13dp"
-						android:contentDescription="bDashboard"
-						android:background="@drawable/vector_ek7" />
+						android:background="@drawable/vector_ek7"
+						android:contentDescription="bDashboard" />
 
 
 				</RelativeLayout>

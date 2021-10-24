@@ -21,6 +21,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import android.util.Log;
 import android.widget.Button;
 
 
@@ -28,7 +29,20 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class google_pixel_2_xl___4_activity extends Activity {
+import androidx.annotation.NonNull;
+
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.auth.AuthCredential;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.firestore.auth.User;
+
+	public class google_pixel_2_xl___4_activity extends Activity {
 
 	
 	private View _bg__google_pixel_2_xl___4_ek2;
@@ -62,6 +76,7 @@ public class google_pixel_2_xl___4_activity extends Activity {
 	private Button buttonProf;
 	private Button buttonHome;
 	private Button buttonDash;
+	public FirebaseAuth mAuth;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -84,7 +99,7 @@ public class google_pixel_2_xl___4_activity extends Activity {
 		vector_ek30 = (ImageView) findViewById(R.id.vector_ek30);
 		vector_ek31 = (ImageView) findViewById(R.id.vector_ek31);
 		rectangle_7_ek2 = (View) findViewById(R.id.rectangle_7_ek2);
-		log_in = (TextView) findViewById(R.id.log_in);
+		log_in = (Button) findViewById(R.id.log_in);
 		rectangle_8_ek2 = (View) findViewById(R.id.rectangle_8_ek2);
 		my_friends = (TextView) findViewById(R.id.my_friends);
 		rectangle_7_ek3 = (View) findViewById(R.id.rectangle_7_ek3);
@@ -98,6 +113,13 @@ public class google_pixel_2_xl___4_activity extends Activity {
 		buttonDash = (Button) findViewById(R.id.bDashboard);
 		buttonProf = (Button) findViewById(R.id.bProf);
 		buttonHome = (Button) findViewById(R.id.bHome);
+
+		log_in.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				logIn();
+			}
+		});
 
 		buttonDash.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -120,6 +142,43 @@ public class google_pixel_2_xl___4_activity extends Activity {
 			}
 		});
 	}
+
+	private void logIn() {
+		// Configure Google Sign In
+		GoogleSignInOptions gso = new GoogleSignInOptions
+				.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+				.requestIdToken("476595331838-q45k1851qsp5lt55oigjegi3ghvk0bal.apps.googleusercontent.com")
+				.requestEmail()
+				.build();
+
+		mAuth = FirebaseAuth.getInstance();
+		
+
+		FirebaseUser currentUser = mAuth.getCurrentUser();
+	}
+
+	private void firebaseAuthWithGoogle(String idToken) {
+		AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
+		mAuth.signInWithCredential(credential)
+				.addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+					@Override
+					public void onComplete(@NonNull Task<AuthResult> task) {
+						if (task.isSuccessful()) {
+							// Sign in success, update UI with the signed-in user's information
+							FirebaseUser user = mAuth.getCurrentUser();
+							updateUI(user.getDisplayName());
+						} else {
+							// If sign in fails, display a message to the user.
+							updateUI(null);
+						}
+					}
+				});
+		}
+
+	private void updateUI(String name) {
+		sunday__10_23_ek2.setText(name);
+	}
+
 	private void openDashboard() {
 		Intent intent = new Intent(this, google_pixel_2_xl___3_activity.class);
 		startActivity(intent);

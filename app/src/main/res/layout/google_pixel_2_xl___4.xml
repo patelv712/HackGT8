@@ -84,8 +84,8 @@
 						android:layout_height="43.5dp"
 						android:layout_marginStart="9.67dp"
 						android:layout_marginTop="7.25dp"
-						android:contentDescription="bHome"
-						android:background="@drawable/vector_ek23" />
+						android:background="@drawable/vector_ek23"
+						android:contentDescription="bHome" />
 
 				</RelativeLayout>
 
@@ -143,17 +143,17 @@
 
 				</RelativeLayout>
 
-				<TextView android:id="@+id/sunday__10_23_ek2"
-					android:fontFamily="Rounded Mplus 1c Bold"
-					android:textStyle="bold"
-					android:textSize="42sp"
-					android:textColor="@color/wtm_color"
-					android:layout_marginLeft="55dp"
-					android:layout_marginTop="23dp"
+				<TextView
+					android:id="@+id/sunday__10_23_ek2"
 					android:layout_width="329dp"
 					android:layout_height="87dp"
+					android:layout_marginLeft="55dp"
+					android:layout_marginTop="23dp"
+					android:fontFamily="Rounded Mplus 1c Bold"
 					android:text="@string/sunday__10_23_ek2_string"
-					 />
+					android:textColor="@color/wtm_color"
+					android:textSize="42sp"
+					android:textStyle="bold" />
 
 
 				<RelativeLayout android:id="@+id/android_ek3"
@@ -239,17 +239,18 @@
 						android:layout_width="181dp"
 						android:layout_height="27dp" />
 
-					<TextView android:id="@+id/log_in"
-						android:fontFamily="Rounded Mplus 1c Bold"
-						android:textStyle="bold"
-						android:textSize="20sp"
-						android:textColor="@color/log_in_color"
-						android:layout_marginLeft="61dp"
-						android:layout_marginTop="0dp"
-						android:layout_width="75dp"
+
+					<Button
+						android:id="@+id/log_in"
+						android:layout_width="175dp"
 						android:layout_height="44dp"
-						android:text="@string/log_in_string"
-						 />
+						android:layout_marginLeft="0dp"
+						android:layout_marginTop="0dp"
+						android:fontFamily="Rounded Mplus 1c Bold"
+						android:text="Log in!"
+						android:textColor="@color/log_in_color"
+						android:textSize="20sp"
+						android:textStyle="bold" />
 
 				</RelativeLayout>
 

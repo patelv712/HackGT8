@@ -34,12 +34,13 @@
 				android:layout_height="wrap_content"
 				>
 
-				<View android:id="@+id/_bg__google_pixel_2_xl___4_ek2"
-					android:background="@drawable/_bg__google_pixel_2_xl___4_ek2_shape"
-					 android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
+				<View
+					android:id="@+id/_bg__google_pixel_2_xl___4_ek2"
 					android:layout_width="411dp"
-					android:layout_height="823dp" />
+					android:layout_height="823dp"
+					android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp"
+					android:background="@drawable/_bg__google_pixel_2_xl___4_ek2_shape" />
 
 				<View android:id="@+id/rectangle_2_ek3"
 					android:background="@drawable/rectangle_2_ek3_shape"
@@ -269,40 +270,66 @@
 						android:layout_width="181dp"
 						android:layout_height="27dp" />
 
-					<TextView android:id="@+id/my_friends"
-						android:fontFamily="Rounded Mplus 1c Bold"
-						android:textStyle="bold"
-						android:textSize="20sp"
-						android:textColor="@color/log_in_color"
-						android:layout_marginLeft="37dp"
-						android:layout_marginTop="0dp"
+					<TextView
+						android:id="@+id/my_friends"
 						android:layout_width="122dp"
 						android:layout_height="44dp"
+						android:layout_marginLeft="37dp"
+						android:layout_marginTop="0dp"
+						android:fontFamily="Rounded Mplus 1c Bold"
 						android:text="@string/my_friends_string"
-						 />
+						android:textColor="@color/log_in_color"
+						android:textSize="20sp"
+						android:textStyle="bold" />
 
 				</RelativeLayout>
-
-				<View android:id="@+id/rectangle_7_ek3"
-					android:background="@drawable/rectangle_7_ek3_shape"
-					 android:layout_marginStart="80dp"
+				<!-- person one -->
+				<TextView
+					android:id="@+id/friend1"
+					android:layout_width="264dp"
+					android:layout_height="51dp"
+					android:layout_marginStart="80dp"
 					android:layout_marginTop="493dp"
-					android:layout_width="264dp"
-					android:layout_height="51dp" />
+					android:background="@drawable/rectangle_6_shape"></TextView>
 
-				<View android:id="@+id/rectangle_8_ek3"
-					android:background="@drawable/rectangle_8_ek3_shape"
-					 android:layout_marginStart="80dp"
+				<View
+					android:id="@+id/rectangle_7_ek3"
+					android:layout_width="264dp"
+					android:layout_height="51dp"
+					android:layout_marginStart="80dp"
+					android:layout_marginTop="493dp" />
+				<!-- person two -->
+
+
+				<TextView
+					android:id="@+id/friend2"
+					android:layout_width="264dp"
+					android:layout_height="49dp"
+					android:layout_marginStart="80dp"
 					android:layout_marginTop="548dp"
-					android:layout_width="264dp"
-					android:layout_height="49dp" />
+					android:background="@drawable/rectangle_7_shape"></TextView>
 
-				<View android:id="@+id/rectangle_9"
-					android:background="@drawable/rectangle_9_shape"
-					 android:layout_marginStart="80dp"
-					android:layout_marginTop="601dp"
+				<View
+					android:id="@+id/rectangle_8_ek"
 					android:layout_width="264dp"
-					android:layout_height="51dp" />
+					android:layout_height="49dp"
+					android:layout_marginStart="80dp"
+					android:layout_marginTop="548dp" />
+				<!-- person 3 -->
+				<TextView
+					android:id="@+id/friend3"
+					android:layout_width="264dp"
+					android:layout_height="51dp"
+					android:layout_marginStart="80dp"
+					android:layout_marginTop="601dp"
+					android:background="@drawable/rectangle_8_shape"></TextView>
+
+				<View
+					android:id="@+id/rectangle_9"
+					android:layout_width="264dp"
+					android:layout_height="51dp"
+					android:layout_marginStart="80dp"
+					android:layout_marginTop="601dp" />
 
 
 				<RelativeLayout android:id="@+id/group_6"

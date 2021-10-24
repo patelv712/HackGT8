@@ -56,6 +56,15 @@ public class google_pixel_2_xl___3_activity extends Activity {
 	private Button buttonProf;
 	private Button buttonHome;
 
+	private TextView view9am1;
+	private TextView view9am2;
+	private TextView view10am;
+	private TextView view11am;
+
+
+
+	//public google_pixel_2_xl___2_activity test = new google_pixel_2_xl___2_activity();;
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 
@@ -89,6 +98,16 @@ public class google_pixel_2_xl___3_activity extends Activity {
 		buttonDash = (Button) findViewById(R.id.bDashboard);
 		buttonProf = (Button) findViewById(R.id.bProf);
 		buttonHome = (Button) findViewById(R.id.bHome);
+
+		view9am1 =(TextView) findViewById(R.id.view9am1);
+		view9am2 =(TextView) findViewById(R.id.view9am2);
+		view10am =(TextView) findViewById(R.id.view10am);
+		view11am =(TextView) findViewById(R.id.view11am);
+
+		view9am1.setText(getIntent().getStringExtra("D"));
+		view9am2.setText(getIntent().getStringExtra("E"));
+		view10am.setText(getIntent().getStringExtra("F"));
+		view11am.setText(getIntent().getStringExtra("G"));
 
 		buttonDash.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -126,6 +145,19 @@ public class google_pixel_2_xl___3_activity extends Activity {
 		startActivity(intent);
 
 	}
+
+	/*public void set9amOne(String text) {
+		view9am1.setText(text);
+	}
+	public void set9amTwo(String text) {
+		view9am2.setText(text);
+	}
+	public void set10am(String text) {
+		view10am.setText(text);
+	}
+	public void set11am(String text) {
+		view11am.setText(text);
+	}*/
 	
 }
 	

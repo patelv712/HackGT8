@@ -153,36 +153,74 @@
 					android:layout_marginTop="122dp"
 					android:layout_width="302dp"
 					android:layout_height="80dp" />
+				<!-- 9am one -->
+				<TextView
+					android:id="@+id/view9am1"
+					android:layout_width="302dp"
+					android:layout_height="80dp"
+					android:gravity="left"
+					android:layout_marginStart="55dp"
+					android:layout_marginTop="269dp"
+					android:background="@drawable/rectangle_5_shape"></TextView>
 
 				<View
 					android:id="@+id/rectangle_5_ek1"
 					android:layout_width="302dp"
 					android:layout_height="80dp"
+					android:layout_alignParentStart="true"
+					android:layout_alignParentEnd="true"
 					android:layout_marginStart="62dp"
 					android:layout_marginTop="266dp"
-					android:background="@drawable/rectangle_5_ek1_shape" />
+					android:layout_marginEnd="47dp" />
+				<!-- 9am two -->
+				<TextView
+					android:id="@+id/view9am2"
+					android:layout_width="302dp"
+					android:layout_height="80dp"
+					android:layout_marginStart="55dp"
+					android:gravity="left"
+					android:layout_marginTop="355dp"
+					android:background="@drawable/rectangle_6_shape"></TextView>
+
 
 				<View
 					android:id="@+id/rectangle_6_ek1"
 					android:layout_width="302dp"
 					android:layout_height="80dp"
 					android:layout_marginStart="62dp"
-					android:layout_marginTop="352dp"
-					android:background="@drawable/rectangle_6_ek1_shape" />
-
-				<View android:id="@+id/rectangle_7_ek1"
-					android:background="@drawable/rectangle_7_ek1_shape"
-					 android:layout_marginStart="62dp"
-					android:layout_marginTop="470dp"
+					android:layout_marginTop="352dp" />
+				<!-- 10am -->
+				<TextView
+					android:id="@+id/view10am"
+					android:gravity="left"
 					android:layout_width="302dp"
-					android:layout_height="80dp" />
+					android:layout_height="80dp"
+					android:layout_marginStart="55dp"
+					android:layout_marginTop="473dp"
+					android:background="@drawable/rectangle_7_shape"></TextView>
 
-				<View android:id="@+id/rectangle_8_ek1"
-					android:background="@drawable/rectangle_8_ek1_shape"
-					 android:layout_marginStart="62dp"
-					android:layout_marginTop="593dp"
+				<View
+					android:id="@+id/rectangle_7_ek1"
 					android:layout_width="302dp"
-					android:layout_height="80dp" />
+					android:layout_height="80dp"
+					android:layout_marginStart="62dp"
+					android:layout_marginTop="470dp" />
+				<!-- 11am -->
+				<TextView
+					android:id="@+id/view11am"
+					android:layout_width="302dp"
+					android:layout_height="80dp"
+					android:gravity="left"
+					android:layout_marginStart="55dp"
+					android:layout_marginTop="596dp"
+					android:background="@drawable/rectangle_8_shape"></TextView>
+
+				<View
+					android:id="@+id/rectangle_8_ek1"
+					android:layout_width="302dp"
+					android:layout_height="80dp"
+					android:layout_marginStart="62dp"
+					android:layout_marginTop="593dp" />
 
 				<TextView
 					android:id="@+id/my_events"

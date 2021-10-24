@@ -65,19 +65,37 @@ import java.util.Map;
 	private ImageView vector_ek12;
 	private ImageView vector_ek13;
 
+	private TextView view9am1;
+	private TextView view9am2;
+	private TextView view10am;
+	private TextView view11am;
+
+	private String nineamone;
+	private String nineamtwo;
+	private String tenam;
+	private String elevenam;
+
+	private Button rsvp1;
+	private Button rsvp2;
+	private Button rsvp3;
+	private Button rsvp4;
+
 	private Button buttonDash;
 	private Button buttonProf;
 	private Button buttonHome;
 	public FirebaseFirestore db = FirebaseFirestore.getInstance();
 
+	//public google_pixel_2_xl___3_activity test = new google_pixel_2_xl___3_activity();
+
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 
-		Event[] events = new Event[3];
-		events[0] = new Event("Tech Talk", "10-23-2021", 1830, 2000, "Klaus 1116", "Union Pacific", "College of Computing", "Public", "Come join Union Pacific for their night Tech Talk as recruiters and past GT graduates talk about their experience, and how their College of Computing threads have helped them succeed! Light dinner will be provided.", -1, false, 0, false, 0);
-		events[1] = new Event("Hallorave", "10-23-2021", 2200, -1, "1745 Defoor Place Suite F", "Sigma Beta Rho Fraternity", "Frat Party", "Paid Admission", "WHATS GOOD ATL... we're back and celebrating Halloween right with our RAVE party. Come costumed up for a lit time hosted by the Gentlemen of Sig Rho.", 100, true, 10, true, 12);
-		events[2] = new Event("SAA Fall Appreciation Festival", "10-23-2021", 1100, 1400, "Tech Walkway", "Student Alumni Association", "Club/Org", "Private", "Today is the day! Join the Student Alumni Association for their Fall Appreciation Fest on Tech Walkway! All students are encouraged to come out and learn more about SAA membership benefits, and trick or treat with fellow Tech Students and SAA members.", -1, false, 0, false, 0);
+		Event[] events = new Event[4];
+		events[0] = new Event("Tech Talk", "10-23-2021", 1830, 2000, "Klaus 1116", "Union Pacific", "College of Computing", "Public", "Light dinner will be provided.", -1, false, 0, false, 0);
+		events[1] = new Event("Hallorave", "10-23-2021", 2200, -1, "1745 Defoor Place", "Sigma Beta Rho Fraternity", "Frat Party", "Paid Admission", "Come costumed up for a lit time!", 100, true, 10, true, 12);
+		events[2] = new Event("SAA Fall Appreciation Festival", "10-23-2021", 1100, 1400, "Tech Walkway", "Student Alumni Association", "Club/Org", "Private", "Come out and trick or treat!", -1, false, 0, false, 0);
+		events[3] = new Event("Blackbear Concert", "10-23-2021", 1100, 1400, "McCamish Pavillion", "SCPC", "Concert", "Public", "In person with BLACKBEAR", 1000, false, 0, false, 0);
 
 		for (int i = 0; i < events.length; i++) {
 			db.collection("10-23-2021").document(events[i].getEventName())
@@ -119,6 +137,23 @@ import java.util.Map;
 		_9_00_am = (TextView) findViewById(R.id._9_00_am);
 		_10_00_am = (TextView) findViewById(R.id._10_00_am);
 		_11_00_am = (TextView) findViewById(R.id._11_00_am);
+
+
+		rsvp1 = (Button) findViewById(R.id.rsvp1);
+		rsvp2 = (Button) findViewById(R.id.rsvp2);
+		rsvp3 = (Button) findViewById(R.id.rsvp3);
+		rsvp4 = (Button) findViewById(R.id.rsvp4);
+
+		view9am1 = (TextView) findViewById(R.id.view9am1);
+		view9am2 = (TextView) findViewById(R.id.view9am2);
+		view10am = (TextView) findViewById(R.id.view10am);
+		view11am = (TextView) findViewById(R.id.view11am);
+
+		view9am1.setText("\n\t\t" +(events[0]).getEventName() + "\n\t\t Location: " + (events[0]).getLocation() + "\n\t\t" + (events[0]).getDescription());
+		view9am2.setText("\n\t\t" +(events[1]).getEventName() + "\n\t\t Location: " + (events[1]).getLocation() + "\n\t\t" + (events[1]).getDescription());
+		view10am.setText("\n\t\t" +(events[2]).getEventName() + "\n\t\t Location: " + (events[2]).getLocation() + "\n\t\t" + (events[2]).getDescription());
+		view11am.setText("\n\t\t" +(events[3]).getEventName() + "\n\t\t Location: " + (events[3]).getLocation() + "\n\t\t" + (events[3]).getDescription());
+
 		klaus_building = (TextView) findViewById(R.id.klaus_building);
 		vector_ek10 = (ImageView) findViewById(R.id.vector_ek10);
 		vector_ek11 = (ImageView) findViewById(R.id.vector_ek11);
@@ -128,6 +163,9 @@ import java.util.Map;
 		buttonDash = (Button) findViewById(R.id.bDashboard);
 		buttonProf = (Button) findViewById(R.id.bProf);
 		buttonHome = (Button) findViewById(R.id.bHome);
+
+
+
 
 		buttonDash.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -149,6 +187,52 @@ import java.util.Map;
 				openHome();
 			}
 		});
+
+		rsvp1.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				//test.set9amOne(getNineAmOne());
+				String val = (String) view9am1.getText().toString();
+				Intent intent = new Intent(google_pixel_2_xl___2_activity.this, google_pixel_2_xl___3_activity.class);
+				intent.putExtra("D", val);
+				startActivity(intent);
+			}
+		});
+		rsvp2.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				//test.set9amTwo(getNineAmTwo());
+				String val = (String) view9am2.getText().toString();
+				Intent intent = new Intent(google_pixel_2_xl___2_activity.this, google_pixel_2_xl___3_activity.class);
+				intent.putExtra("E", val);
+				startActivity(intent);
+			}
+		});
+		rsvp3.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				//test.set10am(getTenAm());
+				String val = (String) view10am.getText().toString();
+				Intent intent = new Intent(google_pixel_2_xl___2_activity.this, google_pixel_2_xl___3_activity.class);
+				intent.putExtra("F", val);
+				startActivity(intent);
+			}
+		});
+		rsvp4.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				//test.set11am(getElevenAm());
+				String val = (String) view11am.getText().toString();
+				Intent intent = new Intent(google_pixel_2_xl___2_activity.this, google_pixel_2_xl___3_activity.class);
+				intent.putExtra("G", val);
+				startActivity(intent);
+			}
+		});
+
+
+
+
+
 	}
 	private void openDashboard() {
 		Intent intent = new Intent(this, google_pixel_2_xl___3_activity.class);
@@ -164,6 +248,21 @@ import java.util.Map;
 		overridePendingTransition(0, 0);
 		startActivity(getIntent());
 		overridePendingTransition(0, 0);
+	}
+
+	public String getNineAmOne()
+	{
+		return nineamone;
+	}
+
+	public String getNineAmTwo() {
+		return nineamtwo;
+	}
+	public String getTenAm() {
+		return tenam;
+	}
+	public String getElevenAm() {
+		return elevenam;
 	}
 
 }

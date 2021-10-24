@@ -42,6 +42,8 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.firestore.auth.User;
 
+import org.w3c.dom.Text;
+
 	public class google_pixel_2_xl___4_activity extends Activity {
 
 	
@@ -73,10 +75,15 @@ import com.google.firebase.firestore.auth.User;
 	private ImageView vector_ek32;
 	private ImageView vector_ek33;
 
+	private TextView friend1;
+	private TextView friend2;
+	private TextView friend3;
+
 	private Button buttonProf;
 	private Button buttonHome;
 	private Button buttonDash;
 	public FirebaseAuth mAuth;
+
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -103,12 +110,15 @@ import com.google.firebase.firestore.auth.User;
 		rectangle_8_ek2 = (View) findViewById(R.id.rectangle_8_ek2);
 		my_friends = (TextView) findViewById(R.id.my_friends);
 		rectangle_7_ek3 = (View) findViewById(R.id.rectangle_7_ek3);
-		rectangle_8_ek3 = (View) findViewById(R.id.rectangle_8_ek3);
 		rectangle_9 = (View) findViewById(R.id.rectangle_9);
 		rectangle_8_ek4 = (View) findViewById(R.id.rectangle_8_ek4);
 		search = (TextView) findViewById(R.id.search);
 		vector_ek32 = (ImageView) findViewById(R.id.vector_ek32);
 		vector_ek33 = (ImageView) findViewById(R.id.vector_ek33);
+
+		friend1 = (TextView) findViewById(R.id.friend1);
+		friend2 = (TextView) findViewById(R.id.friend2);
+		friend3 = (TextView) findViewById(R.id.friend3);
 	
 		buttonDash = (Button) findViewById(R.id.bDashboard);
 		buttonProf = (Button) findViewById(R.id.bProf);
@@ -152,6 +162,7 @@ import com.google.firebase.firestore.auth.User;
 				.build();
 
 		mAuth = FirebaseAuth.getInstance();
+		updateUI();
 		
 
 		FirebaseUser currentUser = mAuth.getCurrentUser();
@@ -166,17 +177,21 @@ import com.google.firebase.firestore.auth.User;
 						if (task.isSuccessful()) {
 							// Sign in success, update UI with the signed-in user's information
 							FirebaseUser user = mAuth.getCurrentUser();
-							updateUI(user.getDisplayName());
+							updateUI();
 						} else {
 							// If sign in fails, display a message to the user.
-							updateUI(null);
+							updateUI();
 						}
 					}
 				});
 		}
 
-	private void updateUI(String name) {
-		sunday__10_23_ek2.setText(name);
+	private void updateUI() {
+		sunday__10_23_ek2.setText("Hi John Doe!");
+		friend1.setText("\t\tMike Johnson \n\t\t Registered for Blackbear Concert");
+		friend2.setText("\t\tHugh Scott");
+		friend3.setText("\t\tWilliam Peterson \n\t\t Registered for Tech Talk");
+
 	}
 
 	private void openDashboard() {

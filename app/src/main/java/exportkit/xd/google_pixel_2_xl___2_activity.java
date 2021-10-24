@@ -27,7 +27,16 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class google_pixel_2_xl___2_activity extends Activity {
+import androidx.annotation.NonNull;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
+
+	public class google_pixel_2_xl___2_activity extends Activity {
 
 	
 	private View _bg__google_pixel_2_xl___2_ek2;
@@ -39,7 +48,7 @@ public class google_pixel_2_xl___2_activity extends Activity {
 	//private ImageView vector_ek7;
 	private ImageView vector_ek8;
 
-	private TextView sunday__10_23;
+	private TextView overallDate;
 	private View rectangle_4;
 	private View rectangle_5;
 	private View rectangle_6;
@@ -59,9 +68,31 @@ public class google_pixel_2_xl___2_activity extends Activity {
 	private Button buttonDash;
 	private Button buttonProf;
 	private Button buttonHome;
+	public FirebaseFirestore db = FirebaseFirestore.getInstance();
+
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+
+		Event[] events = new Event[3];
+		events[0] = new Event("Tech Talk", "10-23-2021", 1830, 2000, "Klaus 1116", "Union Pacific", "College of Computing", "Public", "Come join Union Pacific for their night Tech Talk as recruiters and past GT graduates talk about their experience, and how their College of Computing threads have helped them succeed! Light dinner will be provided.", -1, false, 0, false, 0);
+		events[1] = new Event("Hallorave", "10-23-2021", 2200, -1, "1745 Defoor Place Suite F", "Sigma Beta Rho Fraternity", "Frat Party", "Paid Admission", "WHATS GOOD ATL... we're back and celebrating Halloween right with our RAVE party. Come costumed up for a lit time hosted by the Gentlemen of Sig Rho.", 100, true, 10, true, 12);
+		events[2] = new Event("SAA Fall Appreciation Festival", "10-23-2021", 1100, 1400, "Tech Walkway", "Student Alumni Association", "Club/Org", "Private", "Today is the day! Join the Student Alumni Association for their Fall Appreciation Fest on Tech Walkway! All students are encouraged to come out and learn more about SAA membership benefits, and trick or treat with fellow Tech Students and SAA members.", -1, false, 0, false, 0);
+
+		for (int i = 0; i < events.length; i++) {
+			db.collection("10-23-2021").document(events[i].getEventName())
+					.set(events[0])
+					.addOnSuccessListener(new OnSuccessListener<Void>() {
+						@Override
+						public void onSuccess(Void aVoid) {
+						}
+					})
+					.addOnFailureListener(new OnFailureListener() {
+						@Override
+						public void onFailure(@NonNull Exception e) {
+						}
+					});
+		}
 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.google_pixel_2_xl___2);
@@ -76,7 +107,8 @@ public class google_pixel_2_xl___2_activity extends Activity {
 		//vector_ek7 = (ImageView) findViewById(R.id.vector_ek7);
 		vector_ek8 = (ImageView) findViewById(R.id.vector_ek8);
 
-		sunday__10_23 = (TextView) findViewById(R.id.sunday__10_23);
+		overallDate = (TextView) findViewById(R.id.overallDate);
+		overallDate.setText(events[0].getDateString());
 		rectangle_4 = (View) findViewById(R.id.rectangle_4);
 		rectangle_5 = (View) findViewById(R.id.rectangle_5);
 		rectangle_6 = (View) findViewById(R.id.rectangle_6);
@@ -133,6 +165,7 @@ public class google_pixel_2_xl___2_activity extends Activity {
 		startActivity(getIntent());
 		overridePendingTransition(0, 0);
 	}
+
 }
 	
 	

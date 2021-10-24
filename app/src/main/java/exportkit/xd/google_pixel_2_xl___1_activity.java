@@ -23,6 +23,12 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+
 public class google_pixel_2_xl___1_activity extends Activity {
 
 
@@ -39,6 +45,7 @@ public class google_pixel_2_xl___1_activity extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.google_pixel_2_xl___1);

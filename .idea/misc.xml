@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-nodpi/_bg__google_pixel_2_xl___1_ek2_shape.xml" value="0.2972222222222222" />
+        <entry key="app/src/main/res/drawable-nodpi/rectangle_8_ek3_shape.xml" value="0.2972222222222222" />
         <entry key="app/src/main/res/layout/google_pixel_2_xl___1.xml" value="0.1234375" />
-        <entry key="app/src/main/res/layout/google_pixel_2_xl___2.xml" value="0.24375" />
+        <entry key="app/src/main/res/layout/google_pixel_2_xl___2.xml" value="0.17790405105563983" />
         <entry key="app/src/main/res/layout/google_pixel_2_xl___3.xml" value="0.228125" />
         <entry key="app/src/main/res/layout/google_pixel_2_xl___4.xml" value="0.228125" />
       </map>

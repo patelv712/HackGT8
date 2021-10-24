@@ -137,17 +137,17 @@
 
 				</RelativeLayout>
 
-				<TextView android:id="@+id/sunday__10_23"
-					android:fontFamily="Rounded Mplus 1c Bold"
-					android:textStyle="bold"
-					android:textSize="42sp"
-					android:textColor="@color/wtm_color"
-					android:layout_marginLeft="52dp"
-					android:layout_marginTop="26dp"
+
+				<TextView
+					android:id="@+id/overallDate"
 					android:layout_width="329dp"
 					android:layout_height="87dp"
-					android:text="@string/sunday__10_23_string"
-					 />
+					android:layout_marginLeft="52dp"
+					android:layout_marginTop="26dp"
+					android:fontFamily="Rounded Mplus 1c Bold"
+					android:textColor="@color/wtm_color"
+					android:textSize="42sp"
+					android:textStyle="bold" />
 
 				<View android:id="@+id/rectangle_4"
 					android:background="@drawable/rectangle_4_shape"
@@ -156,12 +156,25 @@
 					android:layout_width="302dp"
 					android:layout_height="80dp" />
 
-				<View android:id="@+id/rectangle_5"
-					android:background="@drawable/rectangle_5_shape"
-					 android:layout_marginStart="55dp"
-					android:layout_marginTop="269dp"
+				<View
+					android:id="@+id/rectangle_5"
 					android:layout_width="302dp"
-					android:layout_height="80dp" />
+					android:layout_height="80dp"
+					android:layout_marginStart="55dp"
+					android:layout_marginTop="269dp"
+					android:background="@drawable/rectangle_5_shape" />
+
+				<TextView
+					android:id="@+id/_9_00_am2"
+					android:layout_width="136dp"
+					android:layout_height="40dp"
+					android:layout_marginLeft="30dp"
+					android:layout_marginTop="232dp"
+					android:fontFamily="Rounded Mplus 1c Bold"
+					android:text="@string/_9_00_am_string"
+					android:textColor="@color/_9_00_am_color"
+					android:textSize="20sp"
+					android:textStyle="bold" />
 
 				<View android:id="@+id/rectangle_6"
 					android:background="@drawable/rectangle_6_shape"
@@ -184,41 +197,41 @@
 					android:layout_width="302dp"
 					android:layout_height="80dp" />
 
-				<TextView android:id="@+id/eotd___gt_hackathon"
-					android:fontFamily="Rounded Mplus 1c Bold"
-					android:textStyle="bold"
-					android:textSize="24sp"
-					android:textColor="@color/what_s_the_move__color"
-					android:layout_marginLeft="79dp"
-					android:layout_marginTop="131dp"
+				<TextView
+					android:id="@+id/eotd___gt_hackathon"
 					android:layout_width="267dp"
 					android:layout_height="53dp"
-					android:text="@string/eotd___gt_hackathon_string"
-					 />
-
-				<TextView android:id="@+id/all_day"
-					android:fontFamily="Rounded Mplus 1c Bold"
-					android:textStyle="bold"
-					android:textSize="20sp"
-					android:textColor="@color/rectangle_2_color"
 					android:layout_marginLeft="79dp"
-					android:layout_marginTop="165dp"
+					android:layout_marginTop="131dp"
+					android:fontFamily="Rounded Mplus 1c Bold"
+					android:text="Georgia Tech"
+					android:textColor="@color/what_s_the_move__color"
+					android:textSize="24sp"
+					android:textStyle="bold" />
+
+				<TextView
+					android:id="@+id/all_day"
 					android:layout_width="95dp"
 					android:layout_height="43dp"
-					android:text="@string/all_day_string"
-					 />
-
-				<TextView android:id="@+id/_9_00_am"
+					android:layout_marginLeft="79dp"
+					android:layout_marginTop="165dp"
 					android:fontFamily="Rounded Mplus 1c Bold"
-					android:textStyle="bold"
+					android:text="@string/all_day_string"
+					android:textColor="@color/rectangle_2_color"
 					android:textSize="20sp"
-					android:textColor="@color/_9_00_am_color"
-					android:layout_marginLeft="30dp"
-					android:layout_marginTop="232dp"
+					android:textStyle="bold" />
+
+				<TextView
+					android:id="@+id/_9_00_am"
 					android:layout_width="136dp"
 					android:layout_height="40dp"
+					android:layout_marginLeft="30dp"
+					android:layout_marginTop="232dp"
+					android:fontFamily="Rounded Mplus 1c Bold"
 					android:text="@string/_9_00_am_string"
-					 />
+					android:textColor="@color/_9_00_am_color"
+					android:textSize="20sp"
+					android:textStyle="bold" />
 
 				<TextView android:id="@+id/_10_00_am"
 					android:fontFamily="Rounded Mplus 1c Bold"
@@ -244,17 +257,17 @@
 					android:text="@string/_11_00_am_string"
 					 />
 
-				<TextView android:id="@+id/klaus_building"
-					android:fontFamily="Rounded Mplus 1c Bold"
-					android:textStyle="bold"
-					android:textSize="20sp"
-					android:textColor="@color/rectangle_2_color"
-					android:layout_marginLeft="197dp"
-					android:layout_marginTop="165dp"
+				<TextView
+					android:id="@+id/klaus_building"
 					android:layout_width="154dp"
 					android:layout_height="43dp"
-					android:text="@string/klaus_building_string"
-					 />
+					android:layout_marginLeft="197dp"
+					android:layout_marginTop="165dp"
+					android:fontFamily="Rounded Mplus 1c Bold"
+					android:text="Campus Events"
+					android:textColor="@color/rectangle_2_color"
+					android:textSize="20sp"
+					android:textStyle="bold" />
 
 
 				<RelativeLayout android:id="@+id/circle"

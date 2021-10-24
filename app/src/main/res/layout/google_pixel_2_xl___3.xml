@@ -135,17 +135,17 @@
 
 				</RelativeLayout>
 
-				<TextView android:id="@+id/sunday__10_23_ek1"
-					android:fontFamily="Rounded Mplus 1c Bold"
-					android:textStyle="bold"
-					android:textSize="42sp"
-					android:textColor="@color/wtm_color"
-					android:layout_marginLeft="59dp"
-					android:layout_marginTop="23dp"
+				<TextView
+					android:id="@+id/sunday__10_23_ek1"
 					android:layout_width="329dp"
 					android:layout_height="87dp"
+					android:layout_marginLeft="59dp"
+					android:layout_marginTop="23dp"
+					android:fontFamily="Rounded Mplus 1c Bold"
 					android:text="@string/sunday__10_23_ek1_string"
-					 />
+					android:textColor="@color/wtm_color"
+					android:textSize="42sp"
+					android:textStyle="bold" />
 
 				<View android:id="@+id/rectangle_4_ek1"
 					android:background="@drawable/rectangle_4_ek1_shape"
@@ -154,12 +154,13 @@
 					android:layout_width="302dp"
 					android:layout_height="80dp" />
 
-				<View android:id="@+id/rectangle_5_ek1"
-					android:background="@drawable/rectangle_5_ek1_shape"
-					 android:layout_marginStart="62dp"
-					android:layout_marginTop="266dp"
+				<View
+					android:id="@+id/rectangle_5_ek1"
 					android:layout_width="302dp"
-					android:layout_height="80dp" />
+					android:layout_height="80dp"
+					android:layout_marginStart="62dp"
+					android:layout_marginTop="266dp"
+					android:background="@drawable/rectangle_5_ek1_shape" />
 
 				<View
 					android:id="@+id/rectangle_6_ek1"
@@ -183,17 +184,17 @@
 					android:layout_width="302dp"
 					android:layout_height="80dp" />
 
-				<TextView android:id="@+id/my_events"
-					android:fontFamily="Rounded Mplus 1c Bold"
-					android:textStyle="bold"
-					android:textSize="40sp"
-					android:textColor="@color/what_s_the_move__color"
-					android:layout_marginLeft="108dp"
-					android:layout_marginTop="132dp"
+				<TextView
+					android:id="@+id/my_events"
 					android:layout_width="226dp"
 					android:layout_height="82dp"
+					android:layout_marginLeft="108dp"
+					android:layout_marginTop="132dp"
+					android:fontFamily="Rounded Mplus 1c Bold"
 					android:text="@string/my_events_string"
-					 />
+					android:textColor="@color/what_s_the_move__color"
+					android:textSize="40sp"
+					android:textStyle="bold" />
 
 				<TextView android:id="@+id/_9_00_am_ek1"
 					android:fontFamily="Rounded Mplus 1c Bold"

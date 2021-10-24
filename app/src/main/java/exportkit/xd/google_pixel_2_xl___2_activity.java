@@ -18,10 +18,12 @@
 package exportkit.xd;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -34,7 +36,7 @@ public class google_pixel_2_xl___2_activity extends Activity {
 	private ImageView vector_ek4;
 	private ImageView vector_ek5;
 	private ImageView vector_ek6;
-	private ImageView vector_ek7;
+	//private ImageView vector_ek7;
 	private ImageView vector_ek8;
 	private ImageView vector_ek9;
 	private TextView sunday__10_23;
@@ -54,6 +56,8 @@ public class google_pixel_2_xl___2_activity extends Activity {
 	private ImageView vector_ek12;
 	private ImageView vector_ek13;
 
+	private Button buttonDash;
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 
@@ -67,7 +71,7 @@ public class google_pixel_2_xl___2_activity extends Activity {
 		vector_ek4 = (ImageView) findViewById(R.id.vector_ek4);
 		vector_ek5 = (ImageView) findViewById(R.id.vector_ek5);
 		vector_ek6 = (ImageView) findViewById(R.id.vector_ek6);
-		vector_ek7 = (ImageView) findViewById(R.id.vector_ek7);
+		//vector_ek7 = (ImageView) findViewById(R.id.vector_ek7);
 		vector_ek8 = (ImageView) findViewById(R.id.vector_ek8);
 		vector_ek9 = (ImageView) findViewById(R.id.vector_ek9);
 		sunday__10_23 = (TextView) findViewById(R.id.sunday__10_23);
@@ -86,10 +90,19 @@ public class google_pixel_2_xl___2_activity extends Activity {
 		vector_ek11 = (ImageView) findViewById(R.id.vector_ek11);
 		vector_ek12 = (ImageView) findViewById(R.id.vector_ek12);
 		vector_ek13 = (ImageView) findViewById(R.id.vector_ek13);
-	
-		
-		//custom code goes here
-	
+
+		buttonDash = (Button) findViewById(R.id.bDashboard);
+
+		buttonDash.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				openDashboard();
+			}
+		});
+		}
+	private void openDashboard() {
+		Intent intent = new Intent(this, google_pixel_2_xl___3_activity.class);
+		startActivity(intent);
 	}
 }
 	

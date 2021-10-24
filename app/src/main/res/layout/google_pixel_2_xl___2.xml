@@ -69,13 +69,14 @@
 						android:layout_width="58dp"
 						android:layout_height="58dp" />
 
-					<ImageView android:id="@+id/vector_ek5"
-						android:src="@drawable/vector_ek5"
-						android:contentDescription="vector_ek5"
-						 android:layout_marginStart="9.67dp"
-						android:layout_marginTop="7.25dp"
+					<ImageView
+						android:id="@+id/vector_ek5"
 						android:layout_width="38.67dp"
-						android:layout_height="43.5dp" />
+						android:layout_height="43.5dp"
+						android:layout_marginStart="9.67dp"
+						android:layout_marginTop="7.25dp"
+						android:contentDescription="vector_ek5"
+						android:src="@drawable/vector_ek5" />
 
 				</RelativeLayout>
 
@@ -95,13 +96,15 @@
 						android:layout_width="51dp"
 						android:layout_height="51dp" />
 
-					<ImageView android:id="@+id/vector_ek7"
-						android:src="@drawable/vector_ek7"
-						android:contentDescription="vector_ek7"
-						 android:layout_marginStart="4.25dp"
-						android:layout_marginTop="2.13dp"
+					<Button
+						android:id="@+id/bDashboard"
 						android:layout_width="42.5dp"
-						android:layout_height="46.75dp" />
+						android:layout_height="46.75dp"
+						android:layout_marginStart="4.25dp"
+						android:layout_marginTop="2.13dp"
+						android:contentDescription="bDashboard"
+						android:src="@drawable/vector_ek7" />
+
 
 				</RelativeLayout>
 

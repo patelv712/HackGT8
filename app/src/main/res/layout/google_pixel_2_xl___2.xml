@@ -49,7 +49,7 @@
 
 				<View android:id="@+id/rectangle_3_ek1"
 					android:background="@drawable/rectangle_3_ek1_shape"
-					 android:layout_marginStart="54dp"
+					android:layout_marginStart="54dp"
 					android:layout_marginTop="97dp"
 					android:layout_width="303dp"
 					android:layout_height="7dp" />
@@ -156,46 +156,132 @@
 					android:layout_width="302dp"
 					android:layout_height="80dp" />
 
+		<!-- 9am one -->
+				<TextView
+					android:id="@+id/view9am1"
+					android:layout_width="302dp"
+					android:layout_height="80dp"
+					android:layout_marginStart="55dp"
+					android:layout_marginTop="269dp"
+					android:background="@drawable/rectangle_5_shape"
+					android:text="hello"></TextView>
+
+
+				<Button
+					android:id="@+id/rsvp1"
+					android:layout_width="60dp"
+					android:layout_height="40dp"
+					android:layout_alignStart="@+id/view9am1"
+					android:layout_alignTop="@+id/view9am1"
+					android:layout_alignEnd="@+id/view9am1"
+					android:layout_alignBottom="@+id/view9am1"
+					android:layout_marginStart="240dp"
+					android:layout_marginTop="20dp"
+					android:layout_marginEnd="4dp"
+					android:layout_marginBottom="20dp"
+					android:background="#545454"
+					android:gravity="center"
+					android:text="RSVP"></Button>
+
 				<View
 					android:id="@+id/rectangle_5"
 					android:layout_width="302dp"
 					android:layout_height="80dp"
 					android:layout_marginStart="55dp"
-					android:layout_marginTop="269dp"
-					android:background="@drawable/rectangle_5_shape" />
-
+					android:layout_marginTop="355dp" />
+				<!-- 9am two -->
 				<TextView
-					android:id="@+id/_9_00_am2"
-					android:layout_width="136dp"
-					android:layout_height="40dp"
-					android:layout_marginLeft="30dp"
-					android:layout_marginTop="232dp"
-					android:fontFamily="Rounded Mplus 1c Bold"
-					android:text="@string/_9_00_am_string"
-					android:textColor="@color/_9_00_am_color"
-					android:textSize="20sp"
-					android:textStyle="bold" />
-
-				<View android:id="@+id/rectangle_6"
-					android:background="@drawable/rectangle_6_shape"
-					 android:layout_marginStart="55dp"
+					android:id="@+id/view9am2"
+					android:layout_width="302dp"
+					android:layout_height="80dp"
+					android:layout_marginStart="55dp"
 					android:layout_marginTop="355dp"
-					android:layout_width="302dp"
-					android:layout_height="80dp" />
+					android:text="hello2"
+					android:background="@drawable/rectangle_6_shape"></TextView>
 
-				<View android:id="@+id/rectangle_7"
-					android:background="@drawable/rectangle_7_shape"
-					 android:layout_marginStart="55dp"
+				<Button
+					android:id="@+id/rsvp2"
+					android:layout_width="60dp"
+					android:layout_height="40dp"
+					android:layout_below="@+id/view9am1"
+					android:layout_alignStart="@+id/rectangle_5"
+					android:layout_alignEnd="@+id/rectangle_5"
+					android:layout_alignBottom="@+id/rectangle_5"
+					android:layout_marginStart="240dp"
+					android:layout_marginTop="20dp"
+					android:layout_marginEnd="0dp"
+					android:layout_marginBottom="20dp"
+					android:background="#545454"
+					android:text="RSVP"></Button>
+
+				<View
+					android:id="@+id/rectangle_6"
+					android:layout_width="302dp"
+					android:layout_height="80dp"
+					android:layout_marginStart="55dp"
+					android:layout_marginTop="355dp" />
+				<!-- 10 am -->
+				<TextView
+					android:id="@+id/view10am"
+					android:layout_width="302dp"
+					android:layout_height="80dp"
+					android:layout_marginStart="55dp"
 					android:layout_marginTop="473dp"
-					android:layout_width="302dp"
-					android:layout_height="80dp" />
+					android:text="hello3"
+					android:background="@drawable/rectangle_7_shape"></TextView>
 
-				<View android:id="@+id/rectangle_8"
-					android:background="@drawable/rectangle_8_shape"
-					 android:layout_marginStart="55dp"
-					android:layout_marginTop="596dp"
+				<Button
+					android:id="@+id/rsvp3"
+					android:layout_width="60dp"
+					android:layout_height="40dp"
+					android:layout_alignStart="@+id/view10am"
+					android:layout_alignTop="@+id/view10am"
+					android:layout_alignEnd="@+id/view10am"
+					android:layout_alignBottom="@+id/view10am"
+					android:layout_marginStart="240dp"
+					android:layout_marginTop="20dp"
+					android:layout_marginEnd="0dp"
+					android:layout_marginBottom="20dp"
+					android:background="#545454"
+					android:text="RSVP"></Button>
+
+				<View
+					android:id="@+id/rectangle_7"
 					android:layout_width="302dp"
-					android:layout_height="80dp" />
+					android:layout_height="80dp"
+					android:layout_marginStart="55dp"
+					android:layout_marginTop="473dp" />
+				<!-- 11 am -->
+				<TextView
+					android:id="@+id/view11am"
+					android:layout_width="302dp"
+					android:layout_height="80dp"
+					android:layout_marginStart="55dp"
+					android:layout_marginTop="596dp"
+					android:background="@drawable/rectangle_8_shape"
+					android:text="hello4"></TextView>
+
+				<Button
+					android:id="@+id/rsvp4"
+					android:layout_width="60dp"
+					android:layout_height="40dp"
+					android:text="RSVP"
+					android:background="#545454"
+					android:layout_alignStart="@+id/view11am"
+					android:layout_alignTop="@+id/view11am"
+					android:layout_alignEnd="@+id/view11am"
+					android:layout_alignBottom="@+id/view11am"
+					android:layout_marginStart="240dp"
+					android:layout_marginTop="20dp"
+					android:layout_marginEnd="0dp"
+					android:layout_marginBottom="20dp"></Button>
+
+				<View
+					android:id="@+id/rectangle_8"
+					android:layout_width="302dp"
+					android:layout_height="80dp"
+					android:layout_marginStart="55dp"
+					android:layout_marginTop="596dp" />
 
 				<TextView
 					android:id="@+id/eotd___gt_hackathon"

@@ -65,7 +65,14 @@ import java.util.Map;
 	private ImageView vector_ek12;
 	private ImageView vector_ek13;
 
-	private Button buttonDash;
+	private TextView view9am1;
+	private TextView view9am2;
+	private TextView view10am;
+	private TextView view11am;
+
+
+
+		private Button buttonDash;
 	private Button buttonProf;
 	private Button buttonHome;
 	public FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -74,10 +81,11 @@ import java.util.Map;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 
-		Event[] events = new Event[3];
-		events[0] = new Event("Tech Talk", "10-23-2021", 1830, 2000, "Klaus 1116", "Union Pacific", "College of Computing", "Public", "Come join Union Pacific for their night Tech Talk as recruiters and past GT graduates talk about their experience, and how their College of Computing threads have helped them succeed! Light dinner will be provided.", -1, false, 0, false, 0);
-		events[1] = new Event("Hallorave", "10-23-2021", 2200, -1, "1745 Defoor Place Suite F", "Sigma Beta Rho Fraternity", "Frat Party", "Paid Admission", "WHATS GOOD ATL... we're back and celebrating Halloween right with our RAVE party. Come costumed up for a lit time hosted by the Gentlemen of Sig Rho.", 100, true, 10, true, 12);
-		events[2] = new Event("SAA Fall Appreciation Festival", "10-23-2021", 1100, 1400, "Tech Walkway", "Student Alumni Association", "Club/Org", "Private", "Today is the day! Join the Student Alumni Association for their Fall Appreciation Fest on Tech Walkway! All students are encouraged to come out and learn more about SAA membership benefits, and trick or treat with fellow Tech Students and SAA members.", -1, false, 0, false, 0);
+		Event[] events = new Event[4];
+		events[0] = new Event("Tech Talk", "10-23-2021", 1830, 2000, "Klaus 1116", "Union Pacific", "College of Computing", "Public", "Light dinner will be provided.", -1, false, 0, false, 0);
+		events[1] = new Event("Hallorave", "10-23-2021", 2200, -1, "1745 Defoor Place Suite F", "Sigma Beta Rho Fraternity", "Frat Party", "Paid Admission", "Come costumed up for a lit time", 100, true, 10, true, 12);
+		events[2] = new Event("SAA Fall Appreciation Festival", "10-23-2021", 1100, 1400, "Tech Walkway", "Student Alumni Association", "Club/Org", "Private", "All students are encouraged to come out and trick or treat with fellow Tech Students and SAA members.", -1, false, 0, false, 0);
+		events[3] = new Event("Blackbear Concert", "10-23-2021", 1100, 1400, "McCamish Pavillion", "SCPC", "Concert", "Public", "The SCPC is so excited to  bring back our annual in person concert featuring BLACKBEAR", 1000, false, 0, false, 0);
 
 		for (int i = 0; i < events.length; i++) {
 			db.collection("10-23-2021").document(events[i].getEventName())
@@ -119,6 +127,18 @@ import java.util.Map;
 		_9_00_am = (TextView) findViewById(R.id._9_00_am);
 		_10_00_am = (TextView) findViewById(R.id._10_00_am);
 		_11_00_am = (TextView) findViewById(R.id._11_00_am);
+
+
+		view9am1 = (TextView) findViewById(R.id.view9am1);
+		view9am2 = (TextView) findViewById(R.id.view9am2);
+		view10am = (TextView) findViewById(R.id.view10am);
+		view11am = (TextView) findViewById(R.id.view11am);
+
+		view9am1.setText((events[0]).getEventName() + "\n Location: " + (events[0]).getLocation() + "\n" + (events[0]).getDescription());
+		view9am2.setText((events[1]).getEventName() + "\n Location: " + (events[1]).getLocation() + "\n" + (events[1]).getDescription());
+		view10am.setText((events[2]).getEventName() + "\n Location: " + (events[2]).getLocation() + "\n" + (events[2]).getDescription());
+		view11am.setText((events[3]).getEventName() + "\n Location: " + (events[3]).getLocation() + "\n" + (events[3]).getDescription());
+
 		klaus_building = (TextView) findViewById(R.id.klaus_building);
 		vector_ek10 = (ImageView) findViewById(R.id.vector_ek10);
 		vector_ek11 = (ImageView) findViewById(R.id.vector_ek11);

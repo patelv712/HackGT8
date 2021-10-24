@@ -49,7 +49,7 @@
 
 				<View android:id="@+id/rectangle_3_ek1"
 					android:background="@drawable/rectangle_3_ek1_shape"
-					 android:layout_marginStart="54dp"
+					android:layout_marginStart="54dp"
 					android:layout_marginTop="97dp"
 					android:layout_width="303dp"
 					android:layout_height="7dp" />
